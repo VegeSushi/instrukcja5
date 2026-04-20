@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    canvas {
+      border: 1px dashed black;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      canvas = document.getElementById("canvas");
+      ctx = canvas.getContext("2d")
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = "#333";
+      ctx.beginPath();
+      ctx.moveTo(230, 325);
+      ctx.bezierCurveTo(379, 96, 4, 133, 381, 349);
+      ctx.stroke();
+    };
+  </script>
+</head>
+<body>
+<canvas id="canvas" width="1000" height="600"></canvas>
+</body>
+</html>
