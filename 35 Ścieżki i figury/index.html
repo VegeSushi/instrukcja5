@@ -12,6 +12,17 @@
     window.onload = function() {
       var canvas = document.getElementById("drawingCanvas");
       var context = canvas.getContext("2d");
+      context.moveTo(50, 50);
+      context.lineTo(50, 250);
+      context.lineTo(450, 250);
+      context.lineTo(450, 50);
+      context.closePath();
+      context.fillStyle = "yellow";
+      context.fill();
+      context.lineWidth = 10;
+      context.strokeStyle = "yellow";
+      context.stroke();
+
       context.moveTo(250,50);
       context.lineTo(50,250);
       context.lineTo(450,250);
